@@ -274,7 +274,7 @@ nav ul {
           align-items: center;
   min-height: 350px;
   height: 50vh;
-  background: url("http://res.cloudinary.com/piggybank/image/upload/v1434574720/yorkshire/traveling-piggybank.png") no-repeat center/cover;
+  background: url("http://res.cloudinary.com/piggybank/image/upload/v1444888085/bridge_hkp6iq.jpg") no-repeat center/cover;
   background-size: cover;
 }
 
@@ -283,7 +283,6 @@ nav ul {
   padding: 0 20px 0;
   overflow: hidden;
   position: relative;
-  background: #000;
   min-height: 755px;
 }
 
