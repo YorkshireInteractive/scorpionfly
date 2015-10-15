@@ -1070,3 +1070,89 @@ footer {
     height: 30px;
   }
 }
+
+/**
+ * WUFOOOOOOOO
+ **/
+.wufoo {
+  width: 500px;
+}
+
+.wufoo form {
+  margin: 0;
+  padding: 0;
+}
+
+.wufoo .symbol {
+  color: #ccc;
+  font-weight: ;
+  font-size: 25px;
+  top:4px;
+  position: relative;
+}
+
+.wufoo input[type=text], .wufoo input[type=email], .wufoo textarea {
+  border: 2px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wufoo select {
+  border: 2px solid #ccc;
+  background: #fff;
+  height: 30px;
+  width: 100%;
+}
+
+.wufoo ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wufoo li {
+  margin: 0 0 12px;
+}
+
+.wufoo .req {
+  color: #c00;
+}
+
+.wufoo .desc {
+  font-weight: bold;
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.wufoo .hide {
+  height: 0;
+  overflow: hidden;
+}
+
+.wufoo .full-name-inputs {
+  display: flex;
+}
+
+.wufoo .fn {
+  margin-right: 10px;
+}
+
+.wufoo .ln {
+}
+
+.wufoo .month, .wufoo .day, .wufoo .year {
+  text-align: center;
+  width: auto !important;
+}
+
+.wufoo .submit {
+  margin-top: 10px;
+  background: #F1853D;
+  border: 0;
+  color: #fff;
+  padding: 13px 30px;
+  font-size: 1.35em;
+  font-weight: bold;
+  width: 100%;
+}
