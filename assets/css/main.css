@@ -394,15 +394,27 @@ nav ul {
 }
 
 .component-wrapper h3 {
-  font-size: 2.1rem;
-  font-weight: 100;
-  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
 }
 
 .component-wrapper h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 0.9;
+}
+
+.component-wrapper h5 {
   font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+  color: #5F5F5F;
+}
+
+.component-wrapper p {
   font-weight: 100;
-  margin: 0 0 3px 0;
 }
 
 .component-description, .business-list-item-description {
