@@ -292,7 +292,7 @@ nav ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 350px;
+  min-height: 550px;
   height: 50vh;
   background: url("http://res.cloudinary.com/piggybank/image/upload/v1444888085/bridge_hkp6iq.jpg") no-repeat center/cover;
   background-size: cover;
