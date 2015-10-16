@@ -461,7 +461,7 @@ nav ul {
 }
 
 .team-list-item-description {
-  margin: 0;
+  margin: 0 25px 0 0;
   font-size: 1.1rem;
   line-height: 1.3rem;
 }
