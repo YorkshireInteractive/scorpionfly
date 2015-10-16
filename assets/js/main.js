@@ -1,3 +1,7 @@
+var $window = $(window);
+var $htmlBody = $('html, body');
+
+var $logo = $('.logo h1');
 var $navigation = $('.header-nav-wrapper');
 var $navLinks = $navigation.find('.header-nav-list-item-link:not(.hire-us-link)');
 var $menuToggle = $('.menu-toggle');
@@ -5,30 +9,37 @@ var $topBar = $('.top-bar');
 var $colorChangeElements = $navLinks.add($menuToggle).add($topBar);
 var $whoWeAreLink = $('.who-we-are-link');
 var $whatWeDoLink = $('.what-we-do-link');
+var $hireUsLink = $('.hire-us-link');
+var $hireUsButton = $('.tag-button');
+var $hireUsTriggers = $hireUsLink.add($hireUsButton);
+
+var splashTransitionHeight = $('.big-splash').height() - 45;
+var secondTransitionHeight = splashTransitionHeight + $('#who-we-are').height() + 45;
+var thirdTransitionHeight = secondTransitionHeight + $('#what-we-do').height() + 45;
+
+var setActiveNav = function ($el) {
+  $el.addClass('active').parent().siblings().find('.header-nav-list-item-link').removeClass('active');
+};
+
+var animateScroll = function (Ycoord) {
+  $htmlBody.animate({ scrollTop: Ycoord+"px" });
+};
 
 $menuToggle.click(function () {
   $(this).toggleClass('open');
   $navigation.slideToggle(250);
 });
 
-var setActiveNav = function ($el) {
-  $el.addClass('active').parent().siblings().find('.header-nav-list-item-link').removeClass('active');
-}
-
-$(window).resize(function () {
+$window.resize(function () {
   // quick copy/paste, can be revisited for betterness
 
   // brings back the nav if someone resizes the page
   // needs work, still breaks with several click/resize combos
   // probably unlikely that users will break it but should be fixed.
-  if ($(this).width() > 749 && $navigation.is(':hidden')) {
+  if ($(this).width() > 770 && $navigation.is(':hidden')) {
     $navigation.show();
   }
 }).scroll(function () {
-  var splashTransitionHeight = $('.big-splash').height() - 45;
-  var secondTransitionHeight = splashTransitionHeight + $('#who-we-are').height() + 45;
-  var thirdTransitionHeight = secondTransitionHeight + $('#what-we-do').height();
-
   var s = window.scrollY;
 
   if (s >= splashTransitionHeight && s < secondTransitionHeight) {
@@ -48,3 +59,8 @@ $(window).resize(function () {
     $navLinks.removeClass('active');
   }
 });
+
+$logo.click(function () {animateScroll(0)});
+$whoWeAreLink.click(function () {animateScroll(splashTransitionHeight)});
+$whatWeDoLink.click(function () {animateScroll(secondTransitionHeight)});
+$hireUsTriggers.click(function () {animateScroll(thirdTransitionHeight)});

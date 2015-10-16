@@ -124,6 +124,7 @@ nav ul {
   display: flex;
   margin: 0 19px 0 0;
   height: 70px;
+  padding: 0;
 }
 
 .header-nav-list-item {
@@ -226,7 +227,7 @@ nav ul {
 
 /* END MENU BUTTON */
 
-@media all and (max-width: 805px) {
+@media all and (max-width: 770px) {
   .top-bar h1 {
     font-size: 1.2rem;
     margin: 15px 0 15px 20px;
