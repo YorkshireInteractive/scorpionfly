@@ -11,20 +11,37 @@ $menuToggle.click(function () {
   $navigation.slideToggle(250);
 });
 
+var setActiveNav = function ($el) {
+  $el.addClass('active').parent().siblings().find('.header-nav-list-item-link').removeClass('active');
+}
+
 $(window).resize(function () {
   // quick copy/paste, can be revisited for betterness
 
   // brings back the nav if someone resizes the page
   // needs work, still breaks with several click/resize combos
   // probably unlikely that users will break it but should be fixed.
-  if ($(this).width() > 449 && $navigation.is(':hidden')) {
+  if ($(this).width() > 749 && $navigation.is(':hidden')) {
     $navigation.show();
   }
 }).scroll(function () {
   var splashTransitionHeight = $('.big-splash').height() - 45;
-  if (window.scrollY > (splashTransitionHeight)) {
+  var secondTransitionHeight = splashTransitionHeight + $('#who-we-are').height() + 45;
+  var thirdTransitionHeight = secondTransitionHeight + $('#what-we-do').height();
+
+  var s = window.scrollY;
+
+  if (s >= splashTransitionHeight && s < secondTransitionHeight) {
     $colorChangeElements.addClass('after-fold');
-    $whoWeAreLink.addClass('active').siblings().removeClass('active');
+    setActiveNav($whoWeAreLink);
+  }
+  else if (s >= secondTransitionHeight && s < thirdTransitionHeight) {
+    $colorChangeElements.addClass('after-fold');
+    setActiveNav($whatWeDoLink);
+  }
+  else if (s >= thirdTransitionHeight) {
+    $colorChangeElements.addClass('after-fold');
+    $navLinks.removeClass('active');
   }
   else {
     $colorChangeElements.removeClass('after-fold');

@@ -226,15 +226,10 @@ nav ul {
 
 /* END MENU BUTTON */
 
-@media screen and (min-width: 450px) and (max-width: 715px) {
-  .header-nav-list {
-    margin-left: -44px;
-  }
-}
-
-@media all and (max-width: 449px) {
-  .top-bar .logo {
-    width: 200px;
+@media all and (max-width: 750px) {
+  .top-bar h1 {
+    font-size: 1.2rem;
+    margin: 15px 0 15px 20px;
   }
   .menu-toggle {
     display: inline-block;
@@ -272,7 +267,14 @@ nav ul {
     color: #554F4E;
   }
   .header-nav-list-item-link:hover {
-    color: #eee;
+    color: #282928;
+  }
+  .header-nav-list-item-link.active {
+    border-bottom: none;
+  }
+  .header-nav-list-item-link.hire-us-link {
+    background-color: #F1853D;
+    padding: 15px 0;
   }
 }
 
