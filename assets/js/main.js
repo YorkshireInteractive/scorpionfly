@@ -18,21 +18,28 @@ var splashTransitionHeight;
 var secondTransitionHeight;
 var thirdTransitionHeight;
 
+/**
+ * Figures out where page needs to transition colors/styles of nav/top-bar elements
+ */
 var getTransitionHeights = function () {
   splashTransitionHeight = $('.big-splash').height();
   secondTransitionHeight = splashTransitionHeight + $('#who-we-are').height();
   thirdTransitionHeight = secondTransitionHeight + $('#what-we-do').height();
 };
 
+/**
+ * Sets element passed to it to active and removes active class from sibling nav
+ */
 var setActiveNav = function ($el) {
   $el.addClass('active').parent().siblings().find('.header-nav-list-item-link').removeClass('active');
 };
 
+/**
+ * Scroll animates page to Ycoord
+ */
 var animateScroll = function (Ycoord) {
   $htmlBody.animate({ scrollTop: Ycoord+"px" });
 };
-
-getTransitionHeights();
 
 /**
  * Figures out which type of event to use. We don't want to use click on mobile
@@ -51,7 +58,14 @@ var toggleMenu = function () {
 };
 
 $menuToggle.on(getClickEvent(), toggleMenu);
-$('.header-nav-list-item').on(getClickEvent(), toggleMenu);
+
+// When a mobile nav link is clicked we should close the menu
+$('.header-nav-list-item').on(getClickEvent(), function () {
+  // We should be checking some state here instead of checking the width
+  if ($window.width() <= 770) {
+    toggleMenu();
+  }
+});
 
 $window.resize(function () {
   // quick copy/paste, can be revisited for betterness
@@ -85,6 +99,8 @@ $window.resize(function () {
     $navLinks.removeClass('active');
   }
 });
+
+getTransitionHeights();
 
 $logo.click(function () {animateScroll(0)});
 $whoWeAreLink.click(function () {animateScroll(splashTransitionHeight)});
