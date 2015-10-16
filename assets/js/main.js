@@ -25,7 +25,6 @@ var animateScroll = function (Ycoord) {
   $htmlBody.animate({ scrollTop: Ycoord+"px" });
 };
 
-
 /**
  * Figures out which type of event to use. We don't want to use click on mobile
  * because there's a 300ms delay as it waits for a doubleclick.
@@ -43,7 +42,14 @@ var toggleMenu = function () {
 };
 
 $menuToggle.on(getClickEvent(), toggleMenu);
-$('.header-nav-list-item').on(getClickEvent(), toggleMenu);
+
+// When a mobile nav link is clicked we should close the menu
+$('.header-nav-list-item').on(getClickEvent(), function () {
+  // We should be checking some state here instead of checking the width
+  if ($window.width() <= 770) {
+    toggleMenu();
+  }
+});
 
 $window.resize(function () {
   // quick copy/paste, can be revisited for betterness
