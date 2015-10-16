@@ -308,6 +308,12 @@ nav ul {
   text-align: center;
 }
 
+.site-image-hide {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 .tag {
   margin: 0;
   padding: 5px 10px;
