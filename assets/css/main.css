@@ -226,7 +226,7 @@ nav ul {
 
 /* END MENU BUTTON */
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 805px) {
   .top-bar h1 {
     font-size: 1.2rem;
     margin: 15px 0 15px 20px;
