@@ -293,7 +293,7 @@ nav ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 350px;
+  min-height: 550px;
   height: 50vh;
   background: url("http://res.cloudinary.com/piggybank/image/upload/v1444888085/bridge_hkp6iq.jpg") no-repeat center/cover;
   background-size: cover;
@@ -672,11 +672,18 @@ footer {
   display: flex;
 }
 
-.wufoo .fn {
-  margin-right: 10px;
+@-moz-document url-prefix() { 
+  .wufoo .full-name-inputs {
+    display: block;
+  }
+
+  .wufoo .ln {
+    margin-top: 15px;
+  }
 }
 
-.wufoo .ln {
+.wufoo .fn {
+  margin-right: 10px;
 }
 
 .wufoo .month, .wufoo .day, .wufoo .year {
