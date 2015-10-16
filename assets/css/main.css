@@ -671,11 +671,18 @@ footer {
   display: flex;
 }
 
-.wufoo .fn {
-  margin-right: 10px;
+@-moz-document url-prefix() { 
+  .wufoo .full-name-inputs {
+    display: block;
+  }
+
+  .wufoo .ln {
+    margin-top: 15px;
+  }
 }
 
-.wufoo .ln {
+.wufoo .fn {
+  margin-right: 10px;
 }
 
 .wufoo .month, .wufoo .day, .wufoo .year {
