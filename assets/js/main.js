@@ -25,10 +25,25 @@ var animateScroll = function (Ycoord) {
   $htmlBody.animate({ scrollTop: Ycoord+"px" });
 };
 
-$menuToggle.click(function () {
-  $(this).toggleClass('open');
+
+/**
+ * Figures out which type of event to use. We don't want to use click on mobile
+ * because there's a 300ms delay as it waits for a doubleclick.
+ */
+var getClickEvent = function () {
+  return 'ontouchstart' in document.documentElement ? 'touchend' : 'click';
+};
+
+/**
+ * Opens and closes the mobile menu
+ */
+var toggleMenu = function () {
+  $menuToggle.toggleClass('open');
   $navigation.slideToggle(250);
-});
+};
+
+$menuToggle.on(getClickEvent(), toggleMenu);
+$('.header-nav-list-item').on(getClickEvent(), toggleMenu);
 
 $window.resize(function () {
   // quick copy/paste, can be revisited for betterness
