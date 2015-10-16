@@ -498,6 +498,10 @@ nav ul {
   margin-top: 100px;
 }
 
+#hire-us h2 {
+  margin-top: 0;
+}
+
 .team-photo {
   height: 150px;
   width: 150px;
@@ -672,7 +676,7 @@ footer {
   display: flex;
 }
 
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   .wufoo .full-name-inputs {
     display: block;
   }

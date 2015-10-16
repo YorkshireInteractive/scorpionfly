@@ -13,9 +13,16 @@ var $hireUsLink = $('.hire-us-link');
 var $hireUsButton = $('.tag-button');
 var $hireUsTriggers = $hireUsLink.add($hireUsButton);
 
-var splashTransitionHeight = $('.big-splash').height() - 45;
-var secondTransitionHeight = splashTransitionHeight + $('#who-we-are').height() + 45;
-var thirdTransitionHeight = secondTransitionHeight + $('#what-we-do').height() + 45;
+var buffer = 50;
+var splashTransitionHeight;
+var secondTransitionHeight;
+var thirdTransitionHeight;
+
+var getTransitionHeights = function () {
+  splashTransitionHeight = $('.big-splash').height();
+  secondTransitionHeight = splashTransitionHeight + $('#who-we-are').height();
+  thirdTransitionHeight = secondTransitionHeight + $('#what-we-do').height();
+};
 
 var setActiveNav = function ($el) {
   $el.addClass('active').parent().siblings().find('.header-nav-list-item-link').removeClass('active');
@@ -24,6 +31,8 @@ var setActiveNav = function ($el) {
 var animateScroll = function (Ycoord) {
   $htmlBody.animate({ scrollTop: Ycoord+"px" });
 };
+
+getTransitionHeights();
 
 $menuToggle.click(function () {
   $(this).toggleClass('open');
@@ -39,10 +48,13 @@ $window.resize(function () {
   if ($(this).width() > 770 && $navigation.is(':hidden')) {
     $navigation.show();
   }
+
+  // refetch transition heights on resize as well
+  getTransitionHeights();
 }).scroll(function () {
   var s = window.scrollY;
 
-  if (s >= splashTransitionHeight && s < secondTransitionHeight) {
+  if (s >= splashTransitionHeight - buffer && s < secondTransitionHeight) {
     $colorChangeElements.addClass('after-fold');
     setActiveNav($whoWeAreLink);
   }
@@ -62,5 +74,5 @@ $window.resize(function () {
 
 $logo.click(function () {animateScroll(0)});
 $whoWeAreLink.click(function () {animateScroll(splashTransitionHeight)});
-$whatWeDoLink.click(function () {animateScroll(secondTransitionHeight)});
-$hireUsTriggers.click(function () {animateScroll(thirdTransitionHeight)});
+$whatWeDoLink.click(function () {animateScroll(secondTransitionHeight + buffer)});
+$hireUsTriggers.click(function () {animateScroll(thirdTransitionHeight + buffer)});
