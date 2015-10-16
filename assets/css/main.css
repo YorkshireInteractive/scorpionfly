@@ -426,6 +426,18 @@ nav ul {
   margin-top: 100px;
 }
 
+.team-photo {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin: 8px 10px 0 0;
+}
+
+.team-list-item-description {
+  margin: 0 25px 0 0;
+  line-height: 1.3rem;
+}
+
 .component-list-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -453,16 +465,15 @@ nav ul {
   margin: 5px 0 5px;
 }
 
-.team-photo {
-  height: 150px;
-  width: 150px;
-  float: left;
-  margin: 8px 10px 0 0;
+
+#what-we-do {
+  margin-top: 60px;
 }
 
-.team-list-item-description {
-  margin: 0 25px 0 0;
-  line-height: 1.3rem;
+@media screen and (max-width: 700px) {
+  #what-we-do .component-list-item {
+    width: 100%;
+  }
 }
 
 .social-links {
