@@ -438,6 +438,30 @@ nav ul {
   line-height: 1.3rem;
 }
 
+@media screen and (max-width: 850px) {
+  #who-we-are .component-list-item {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+
+  #who-we-are .team-photo {
+    margin: 3px 15px 0 0;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  #who-we-are .component-list-item {
+    margin: 10px 0 30px 0;
+  }
+
+  #who-we-are .team-photo {
+    float: none;
+    margin: 0 0 15px 0;
+  }
+}
+
 .component-list-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
