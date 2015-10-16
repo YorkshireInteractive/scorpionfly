@@ -483,6 +483,11 @@ footer {
   color: #fff;
 }
 
+.disclaimer-text {
+  font-size: 11px;
+  max-width: 450px;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   /* Disgusting, but required for that busted bitch IE */
   .top-bar .logo {
