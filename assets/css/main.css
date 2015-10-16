@@ -444,7 +444,7 @@ nav ul {
 }
 
 .component-list-item {
-  width: calc(50% - 10px);
+  width: calc(50% - 20px);
   margin: 0 0 20px 0;
   padding: 0 10px 0 0;
 }
@@ -506,7 +506,7 @@ footer {
  * WUFOOOOOOOO
  **/
 .wufoo {
-  width: 500px;
+  max-width: 715px;
 }
 
 .wufoo form {
@@ -586,4 +586,10 @@ footer {
   font-size: 1.35em;
   font-weight: bold;
   width: 100%;
+}
+
+@media screen and (max-width: 715px) {
+  #hire-us .component-list-item {
+    width: 100%;
+  }
 }
