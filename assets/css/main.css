@@ -19,7 +19,6 @@ button {
   color: #fff;
   padding: 13px 30px;
   font-size: 1.35em;
-  font-family: helvetica, sans-serif;
 }
 
 input,textarea {
@@ -157,6 +156,7 @@ nav ul {
 .header-nav-list-item-link.hire-us-link {
   background-color: #F1853D;
   padding: 5px 13px;
+  font-weight: 500;
 }
 
 /* MENU BUTTON */
@@ -336,9 +336,11 @@ nav ul {
 .tag-button {
   font-size: 2.75rem;
   font-weight: bold;
-  padding: 7px 10px;
+  padding: 7px 15px;
   margin: 60px auto 0;
   display: inline-block;
+  background: #F1853D;
+  color: #fff;
 }
 
 .fold-icon {
