@@ -266,6 +266,7 @@ nav ul {
     margin-left: 0;
     width: 100%;
     color: #554F4E;
+    cursor: pointer;
   }
   .header-nav-list-item-link:hover {
     color: #282928;
