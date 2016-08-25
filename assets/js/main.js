@@ -82,7 +82,7 @@ $window.resize(function () {
 }).scroll(function () {
   var s = window.scrollY;
 
-  if (s >= splashTransitionHeight - buffer && s < secondTransitionHeight) {
+  if (s >= splashTransitionHeight && s < secondTransitionHeight) {
     $colorChangeElements.addClass('after-fold');
     setActiveNav($whoWeAreLink);
   }
@@ -100,9 +100,30 @@ $window.resize(function () {
   }
 });
 
+
 getTransitionHeights();
 
 $logo.click(function () {animateScroll(0)});
 $whoWeAreLink.click(function () {animateScroll(splashTransitionHeight)});
 $whatWeDoLink.click(function () {animateScroll(secondTransitionHeight + buffer)});
 $hireUsTriggers.click(function () {animateScroll(thirdTransitionHeight + buffer)});
+
+
+/*Crappy Markup to make things work from Jason :D */
+$(document).ready(function (){
+  $("#Read-More").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#intro-block").offset().top
+      }, 600);
+  });
+
+  $(".btn-hire-us").click(function() {
+    $('#contact-form-modal').fadeToggle();
+  });
+  $(".modal-dismiss-btn").click(function() {
+    $('#contact-form-modal').fadeToggle();
+  });
+
+
+
+});
