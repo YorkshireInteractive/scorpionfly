@@ -175,7 +175,7 @@ p{
   opacity:.95
 }
 
-.big-splash div a.btn-more{
+a.btn-more{
   display:block;
   position:absolute;
   bottom:25px;
@@ -390,33 +390,33 @@ p{
 #what-were-building .inner-wrapper{
 }
 
-#what-were-building #project-list .project-profile{
+#what-were-building .project-profile{
   width:49.5%;
   float:left;
   margin:0;
 }
-#what-were-building #project-list .project-profile:first-child{
+#what-were-building .project-profile:first-child{
   border-right:1px solid rgba(0,0,0,.08);
   width:49.5%;
 }
-#what-were-building #project-list .project-profile img{
+#what-were-building .project-profile img{
   width:200px;
   max-width:80%;
   margin:0 auto;
 }
 
-#what-were-building #project-list .project-profile h4{
+#what-were-building .project-profile h4{
   margin:15px 0 5px 0;
   padding:0 25px;
   color:#555;
 }
-#what-were-building #project-list .project-profile h5{
+#what-were-building .project-profile h5{
   margin:0 0 25px 0;
   padding:0 50px;
   color:#555;
 
 }
-#what-were-building #project-list .project-profile p{
+#what-were-building .project-profile p{
   font-size:16px;
   line-height:24px;
   margin:0 auto 20px;
@@ -425,7 +425,7 @@ p{
   max-width:100%;
 }
 
-#what-were-building #project-list .project-profile a.btn{
+#what-were-building .project-profile .btn{
   color:rgba(225, 73, 38, 1);
   font-size:16px;
   text-decoration:none;
@@ -900,19 +900,19 @@ nav ul {
     max-width:500px;
   }
 
-  #what-were-building #project-list .project-profile{
+  #what-were-building .project-profile{
     width:100%;
   }
-  #what-were-building #project-list .project-profile:first-child{
+  #what-were-building .project-profile:first-child{
     border-right:none;
     width:100%;
   }
 
-  #what-were-building #project-list .project-profile   .logo-container{
+  #what-were-building .logo-container{
     margin-bottom:0;
     padding-bottom:0;
   }
-  #what-were-building #project-list .project-profile img{
+  #what-were-building .project-profile img{
     width:200px;
     max-width:80%;
     margin:0 auto;
@@ -920,20 +920,20 @@ nav ul {
 
   }
 
-  #what-were-building #project-list .project-profile h4{
+  #what-were-building .project-profile h4{
     margin:15px 0 5px 0;
     padding:0 25px;
     color:#555;
   }
-  #what-were-building #project-list .project-profile h5{
+  #what-were-building .project-profile h5{
   }
-  #what-were-building #project-list .project-profile p{
+  #what-were-building .project-profile p{
     width:100%;
     padding-bottom:0;
     margin-bottom:10px;
   }
 
-  #what-were-building #project-list .project-profile a.btn{
+  #what-were-building .project-profile .btn{
     margin-bottom:50px;
     display:inline-block;
   }
