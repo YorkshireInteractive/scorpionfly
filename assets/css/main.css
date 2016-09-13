@@ -428,7 +428,7 @@ a.btn-more{
 #what-were-building .project-profile p{
   font-size:16px;
   line-height:24px;
-  margin:0 auto 20px;
+  margin:0 auto 0px;
   color:#555;
   width:300px;
   max-width:100%;
@@ -527,41 +527,31 @@ footer .disclaimer-text{
 }
 
 /*CONTACT FORM MODAL*/
-#contact-form-modal{
-  background:rgba(15,25,30, .9);
-  position:fixed;
+
+#hire-us-wrapper{
   z-index:999;
+  position:fixed;
   top:0;
+  bottom:0;
   left:0;
   right:0;
-  bottom:0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:rgba(15,25,30, .9);
+  display:none;
+
 }
 
 #hire-us{
   max-width:800px;
-  display:block;
-  margin:0 auto;
+  width:95%;
   background:rgba(24,34,41, 1);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   color:#fff1ef;
-  position:relative;
   max-height:100%;
   overflow:auto;
+  margin:5% auto;
+  padding:0 25px;
 }
 
 #hire-us ul{
@@ -838,6 +828,12 @@ nav ul {
     width:90%;
     margin: 0 5%;
   }
+
+  #hire-us{
+    width:90%;
+    padding:2%;
+    margin:3%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -944,8 +940,6 @@ nav ul {
     padding:0 25px;
     color:#555;
   }
-  #what-were-building .project-profile h5{
-  }
   #what-were-building .project-profile p{
     width:100%;
     padding-bottom:0;
@@ -956,7 +950,11 @@ nav ul {
     margin-bottom:50px;
     display:inline-block;
   }
-  .top-bar{display:none !important;}
+
+  .top-bar{
+    display:none !important;
+  }
+
 }
 
 /*Animations*/

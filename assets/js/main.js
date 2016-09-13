@@ -119,9 +119,12 @@ $(document).ready(function (){
 
   $(".btn-hire-us").click(function() {
     $('#contact-form-modal').fadeToggle();
+    $('#hire-us-wrapper').fadeToggle();
+
   });
   $(".modal-dismiss-btn").click(function() {
     $('#contact-form-modal').fadeToggle();
+    $('#hire-us-wrapper').fadeToggle();
   });
 
 
