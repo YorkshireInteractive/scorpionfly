@@ -838,7 +838,7 @@ nav ul {
 
 @media screen and (max-width: 768px) {
   .big-splash{
-    height:100vh;
+    height:80vh;
   }
   .mark{
     width:50px;
