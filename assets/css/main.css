@@ -63,9 +63,14 @@ p{
 
 .top-bar .inner-wrapper{
   max-width:1200px;
-  display:block;
-  margin:0 auto;
+  display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    margin:0 auto;
   padding:0;
+    height:40px;
+
 }
 .top-bar .inner-wrapper p.logotype{
   font-family: "mr-eaves-xl-modern", helvetica;
@@ -75,28 +80,26 @@ p{
   text-align:left;
   color:#fff1ef;
   margin:0;padding:0;
-  position:relative;
-  top:4px;
-  float:left;
+
 }
 .top-bar .inner-wrapper p.logotype img{
   text-align:left;
   color:#fff1ef;
-  margin:-3px 15px 0 0;
+  margin:0 15px 0 0;
   padding:0;
   font-size:24px;
-  float:left;
+    position:relative;
+    top:5px;
+
   width:30px;
-  display:inline-block;
   position:relative:
 }
 .top-bar .inner-wrapper p.cta{
   text-align:right;
   color:#fff1ef;
-  margin:5px 0 0 0;
+    margin:0;
   padding:0;
   font-size:16px;
-  float:right;
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:400;;
 }
@@ -280,7 +283,9 @@ a.btn-more{
 .services-blocks{
   position:relative;
   width:100%;
-  display:block;
+  display:flex;
+    justify-content: space-between;
+
 }
 
 .block-service{
@@ -289,12 +294,10 @@ a.btn-more{
 }
 
 .block-service.right{
-  float:right;
   padding-left:21%;
   padding-right:4%;;
 }
 .block-service.left{
-  float:left;
   padding-right:21%;
   padding-left:4%;
 }
@@ -348,9 +351,13 @@ a.btn-more{
   margin-bottom:35px;
 }
 
+#who-we-are .team-member-blocks{
+    display:flex;
+    justify-content: space-between;
+}
+
 #who-we-are #team-wrapper .team-member{
   width:33.3%;
-  float:left;
   margin:0;
 }
 #who-we-are #team-wrapper .team-member img{
@@ -390,9 +397,13 @@ a.btn-more{
 #what-were-building .inner-wrapper{
 }
 
+#what-were-building #project-list{
+    display:flex;
+    justify-content: space-between;
+}
+
 #what-were-building .project-profile{
   width:49.5%;
-  float:left;
   margin:0;
 }
 #what-were-building .project-profile:first-child{
@@ -743,6 +754,7 @@ nav ul {
     width:1000px;
     margin:0 auto;
   }
+
   .block-service{
     width:22%
   }
@@ -851,18 +863,22 @@ nav ul {
     font-size:24px;
   }
 
+    .services-blocks{
+        flex-direction: column;
+    }
+
   .block-service{
     width:100%;
     position:relative;
   }
 
   .block-service.right{
-    float:left;
-    padding:0;margin:0;
+    padding:0;
+      margin:0;
   }
   .block-service.left{
-    float:left;
-    padding:0;margin:0;
+    padding:0;
+      margin:0;
   }
 
   .plus{
@@ -883,7 +899,9 @@ nav ul {
   .block-service.left .circle{
     right:0;
   }
-
+    #who-we-are .team-member-blocks{
+      flex-direction:column;
+  }
   #who-we-are #team-wrapper .team-member{
     width:100%;
   }
@@ -899,7 +917,9 @@ nav ul {
   #what-were-building .inner-wrapper{
     max-width:500px;
   }
-
+    #what-were-building #project-list{
+        flex-direction:column;
+    }
   #what-were-building .project-profile{
     width:100%;
   }
