@@ -22,6 +22,11 @@ body {
   font-size: 95%;
 }
 
+input, select, textarea{
+  font-family: "mr-eaves-xl-modern", helvetica;
+  font-weight:400;
+}
+
 h1, h2, h3, h4, h5, h6{
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:700;
@@ -662,15 +667,33 @@ nav ul {
   box-sizing: border-box;
   background:rgba(255,255,255,.1);
   border:none;
+  font-size:16px;
+  color: #ccc;
+
 }
 
-.wufoo select {
+.wufoo .styled-select select {
   background: #fff1ef;
   height: 30px;
   width: 100%;
   background:rgba(255,255,255,.1);
   border:none;
   padding:15px;
+  box-sizing: border-box;
+  color: #ccc;
+  font-size:16px;
+  background:transparent;
+  margin:0;padding:0;
+  -webkit-appearance: none;
+}
+
+.wufoo .styled-select{
+  background:rgba(255,255,255,.1);
+  margin:0;
+  display:block;
+  color:#ccc;
+  padding: 15px;
+  width:auto;
 }
 
 .wufoo ul {
@@ -970,6 +993,16 @@ nav ul {
         padding:3%;
         margin:0;
     }
+
+    #hire-us h3{
+      font-size:36px;
+      margin: 25px 0 0 0;
+    }
+  #hire-us p{
+    font-size:16px;
+    padding: 0;
+    margin-bottom:35px;
+  }
 
 }
 
