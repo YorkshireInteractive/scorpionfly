@@ -964,6 +964,13 @@ nav ul {
     display:none !important;
   }
 
+    #hire-us{
+        width:94%;
+        max-width:94%;
+        padding:3%;
+        margin:0;
+    }
+
 }
 
 /*Animations*/
