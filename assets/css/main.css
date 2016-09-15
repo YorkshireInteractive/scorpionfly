@@ -893,9 +893,9 @@ nav ul {
     font-size:24px;
   }
 
-    .services-blocks{
-        flex-direction: column;
-    }
+  .services-blocks{
+    flex-direction: column;
+  }
 
   .block-service{
     width:100%;
