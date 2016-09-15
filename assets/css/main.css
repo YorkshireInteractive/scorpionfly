@@ -590,15 +590,6 @@ footer .disclaimer-text{
   cursor:pointer;
 }
 
-.modal-bg{
-  display:block;
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-}
-
 input,textarea {
   font-size: inherit;
   font-family: inherit;
@@ -694,6 +685,20 @@ nav ul {
   color:#ccc;
   padding: 15px;
   width:auto;
+  position:relative;
+}
+.wufoo .styled-select:after{
+  content:"";
+  display:block;
+  width:16px;
+  height:16px;
+  background:url(../img/dropdown.svg) no-repeat center center transparent;
+  background-size:16px;
+  position:absolute;
+  top: 50%;
+  right:15px;
+  margin-top:-8px;
+  opacity:.5;
 }
 
 .wufoo ul {

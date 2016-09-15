@@ -126,11 +126,5 @@ $(document).ready(function (){
     $('#contact-form-modal').fadeToggle();
     $('#hire-us-wrapper').fadeToggle();
   });
-  $("#hire-us-wrapper .modal-bg").click(function() {
-    $('#contact-form-modal').fadeToggle();
-    $('#hire-us-wrapper').fadeToggle();
-  });
-
-
 
 });
