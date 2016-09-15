@@ -552,6 +552,7 @@ footer .disclaimer-text{
   overflow:auto;
   margin:5% auto;
   padding:0 25px;
+  position:relative;
 }
 
 #hire-us ul{
@@ -580,11 +581,18 @@ footer .disclaimer-text{
   padding:10px 15px;
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:400;
-  color:rgba(255,255,255,.1);
+  color:rgba(255,255,255,.5);
   cursor:pointer;
 }
 
-
+.modal-bg{
+  display:block;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
 
 input,textarea {
   font-size: inherit;
@@ -831,6 +839,7 @@ nav ul {
 
   #hire-us{
     width:90%;
+    max-width:90%;
     padding:2%;
     margin:3%;
   }
