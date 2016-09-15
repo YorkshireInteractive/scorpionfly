@@ -869,6 +869,9 @@ nav ul {
 }
 
 @media screen and (max-width: 768px) {
+  #intro-block.wide-block .inner-wrapper{
+    padding:75px 0;
+  }
   .big-splash{
     height:80vh;
   }
@@ -883,7 +886,7 @@ nav ul {
   .wide-block .inner-wrapper{
     width:90%;
     margin:0 5%;
-    padding:50px 0;
+    padding:75px 0;
     max-width:500px;
   }
   .wide-block .inner-wrapper h3{
