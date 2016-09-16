@@ -1056,3 +1056,7 @@ nav ul {
     transform: translateY(-10px);
   }
 }
+
+.wf-loading {
+  opacity: 0 !important;
+}
