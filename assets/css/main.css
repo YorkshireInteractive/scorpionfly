@@ -135,10 +135,10 @@ a:hover{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: url("img/desk.jpg") no-repeat center/cover;
+    background: url("../img/desk.jpg") no-repeat center/cover;
     height:100vh;
     padding: 0;
-    magin:0;
+    margin:0;
     position: relative;
     border-top:5px solid  #52868e;
 }
@@ -217,7 +217,7 @@ a:hover{
     left:0;
     overflow:hidden;
     text-indent:-999px;
-    background:url(img/arrow-down.svg) no-repeat center center;
+    background:url(../img/arrow-down.svg) no-repeat center center;
     background-size: 20px;
     opacity:.5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -725,7 +725,7 @@ nav ul {
     display:block;
     width:16px;
     height:16px;
-    background:url(img/arrow-down.svg) no-repeat center center transparent;
+    background:url(../img/arrow-down.svg) no-repeat center center transparent;
     background-size:16px;
     position:absolute;
     top: 50%;
