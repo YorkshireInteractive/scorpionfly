@@ -39,7 +39,7 @@ h2{
 }
 h3{
     font-size:48px;
-    color: rgba(24,34,41, 1)
+    color: rgb(24,34,41)
 }
 h4{
     font-size:24px;
@@ -119,7 +119,7 @@ a:hover{
 .top-bar .inner-wrapper .cta a.btn-hire-us{
     font-size:14px;
     padding:6px 25px;
-    background:rgba(204, 40, 41, 1);
+    background:rgb(204, 40, 41);
     border:none;
     margin-left:10px;
 }
@@ -182,7 +182,7 @@ a:hover{
     text-transform:uppercase;
     text-decoration:none;
     letter-spacing:.05em;
-    background:  rgba(204, 40, 41, 1);
+    background:  rgb(204, 40, 41);
     border-radius:25px;
 }
 .btn-hire-us:hover{
@@ -277,7 +277,7 @@ a:hover{
 
 /*INTRO BLOCK*/
 #intro-block.wide-block{
-    background:rgba(24,34,41, 1);
+    background:rgb(24,34,41);
     color:#fff1ef;
 }
 
@@ -407,7 +407,7 @@ a:hover{
     font-size:16px;
     letter-spacing:.05em;
     text-transform:uppercase;
-    color:rgba(24,34,41, 1);
+    color:rgb(24,34,41);
 
 }
 #who-we-are #team-wrapper .team-member p{
@@ -419,7 +419,7 @@ a:hover{
 
 /*WHAT WE'RE BUILDING*/
 #what-were-building{
-    background:rgba(255,255,255,1);
+    background:rgb(255,255,255);
 }
 #what-were-building .inner-wrapper{
 }
@@ -490,13 +490,13 @@ a:hover{
     -ms-flex-align: center;
     align-items: center;
     margin:0 auto;
-    background:rgba(255,255,255,1);
+    background:rgb(255,255,255);
     margin-bottom:20px;
 }
 
 /*CTA BLOCK*/
 #cta-block.wide-block{
-    background:rgba(24,34,41, 1);
+    background:rgb(24,34,41);
     color:#fff1ef;
 }
 #cta-block .inner-wrapper h3{
@@ -510,7 +510,7 @@ a:hover{
 
 /*FOOTER*/
 footer{
-    background:rgba(24,34,41, 1);
+    background:rgb(24,34,41);
     border-top:1px solid rgba(82,134,142,.3);
     color:#52868e;
     padding:0;
@@ -520,7 +520,7 @@ footer{
 }
 
 #footer-wrapper{
-    background:rgba(24,34,41, 1);
+    background:rgb(24,34,41);
 }
 
 footer ul{
@@ -583,7 +583,7 @@ footer .disclaimer-text{
 #hire-us{
     max-width:800px;
     width:95%;
-    background:rgba(24,34,41, 1);
+    background:rgb(24,34,41);
     color:#fff1ef;
     max-height:100%;
     overflow:auto;
@@ -787,7 +787,7 @@ nav ul {
 
 .wufoo .submit {
     margin-top: 10px;
-    background: rgba(226,23,82,1);
+    background: rgb(226,23,82);
     border: 0;
     color: #fff1ef;
     padding: 20px 30px;
@@ -800,7 +800,7 @@ nav ul {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: .05em;
-    background: rgba(204, 40, 41, 1);
+    background: rgb(204, 40, 41);
     border-radius: 25px;
 }
 
