@@ -67,7 +67,6 @@ $window.resize(function () {
 getTransitionHeights();
 
 /* Contact Modal*/
-$(document).ready(function (){
   $("#Read-More").click(function() {
       $('html, body').animate({
           scrollTop: $("#intro-block").offset().top
@@ -83,5 +82,3 @@ $(document).ready(function (){
     $('#contact-form-modal').fadeToggle();
     $('#hire-us-wrapper').fadeToggle();
   });
-
-});

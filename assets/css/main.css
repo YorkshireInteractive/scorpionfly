@@ -49,18 +49,22 @@ p{
   font-size:18px;
 }
 
+a:hover{
+    cursor:pointer;
+}
+
 /*Top Bar*/
 
 .top-bar{
   padding:20px 0 20px 0;
   margin:0;
-  width:100%;
   display:none;
   position:fixed;
-  top:0;left:0;
+  top:0;
+  left:0;
   z-index:998;
-  background:rgba(24,34,41, 1);
-  border-bottom:1px solid rgba(47,62,72, 1);
+  background:rgb(24,34,41);
+  border-bottom:1px solid rgb(47,62,72);
 }
 .top-bar.after-fold{
   display:block;
@@ -70,25 +74,23 @@ p{
 .top-bar .inner-wrapper{
   max-width:1200px;
   display:flex;
-    justify-content: space-between;
-    align-items:center;
-
-    margin:0 auto;
+  justify-content: space-between;
+  align-items:center;
+  margin:0 auto;
   padding:0;
-    height:40px;
-
+  height:40px;
 }
-.top-bar .inner-wrapper p.logotype{
+.logotype{
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:400;
   letter-spacing: 0.1em;
   text-transform:uppercase;
   text-align:left;
   color:#fff1ef;
-  margin:0;padding:0;
-
+  margin:0;
+  padding:0;
 }
-.top-bar .inner-wrapper p.logotype img{
+.logotype img{
   text-align:left;
   color:#fff1ef;
   margin:0 15px 0 0;
@@ -96,7 +98,7 @@ p{
   font-size:24px;
     width:300px;
 }
-.top-bar .inner-wrapper p.cta{
+.top-bar .inner-wrapper .cta{
   text-align:right;
   color:#fff1ef;
   margin:0;
@@ -107,7 +109,7 @@ p{
     position:relative;
     top:-2px;
 }
-.top-bar .inner-wrapper p.cta a.btn-hire-us{
+.top-bar .inner-wrapper .cta a.btn-hire-us{
   font-size:14px;
   padding:6px 25px;
   background:rgba(204, 40, 41, 1);
@@ -135,7 +137,7 @@ p{
   border-top:5px solid  #52868e;
 }
 
-.big-splash div.vert-wrap{
+.big-splash .vert-wrap{
   width:100%;
   display:block;
 }
@@ -149,13 +151,13 @@ p{
   display:inline-block;
   width:100%;
   line-height: 96%;
-  margin:0;padding:0;
+  margin:0;
+  padding:0;
   font-size: 120px;
   color: #FFFFFF;
 }
 
 .big-splash div h2{
-  /* UI Design, Engineeri: */
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:400;
   font-size: 18px;
@@ -182,7 +184,7 @@ p{
   opacity:.95
 }
 
-a.btn-more{
+.btn-more{
   display:block;
   position:absolute;
   bottom:25px;
@@ -195,10 +197,10 @@ a.btn-more{
   animation: bounce 4s infinite;
 }
 
-.big-splash div a.btn-more:hover{
+.big-splash .btn-more:hover{
   opacity:.8;
 }
-.big-splash div a.btn-more span{
+.big-splash .btn-more span{
   display:block;
   position:absolute;
   top:0;
@@ -255,7 +257,7 @@ a.btn-more{
   line-height:100%;
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:700;
-  margin:0 auto 25px auto;
+  margin:0 auto 25px;
   max-width:1000px;
 }
 
@@ -292,8 +294,7 @@ a.btn-more{
   position:relative;
   width:100%;
   display:flex;
-    justify-content: space-between;
-
+  justify-content: space-between;
 }
 
 .block-service{
@@ -508,15 +509,16 @@ footer ul{
   list-style:none;
 }
 
-footer ul.social li{
+footer li{
   margin:0;padding:0;
   display:inline-block;
 }
 
-footer ul.social li a{
+footer a{
   color:#52868e;
   text-decoration:none;
-  margin:0;padding:0;
+  margin:0;
+  padding:0;
   margin: 0 10px;
 }
 
@@ -595,7 +597,6 @@ footer .disclaimer-text{
   font-family: "mr-eaves-xl-modern", helvetica;
   font-weight:400;
   color:rgba(255,255,255,.5);
-  cursor:pointer;
 }
 
 input,textarea {
@@ -1007,15 +1008,15 @@ nav ul {
   }
 
     #hire-us{
-        width:94%;
-        max-width:94%;
-        padding:3%;
-        margin:0;
+    width:94%;
+    max-width:94%;
+    padding:3%;
+    margin:0;
     }
 
     #hire-us h3{
-      font-size:36px;
-      margin: 25px 0 0 0;
+    font-size:36px;
+    margin: 25px 0 0 0;
     }
   #hire-us p{
     font-size:16px;
