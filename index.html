@@ -43,7 +43,7 @@
 <div class="top-bar">
   <div class="inner-wrapper">
     <p class="logotype"><img src="assets/img/logotype-full.svg" /></p>
-    <p class="cta">We are currently taking new projects!<a onclick="goog_report_conversion ('http://www.yorkshireinteractive.com/topbar-contact-form-launched')" class="btn-hire-us">Hire Us</a></p>
+    <p class="cta">We are currently taking new projects!<a class="btn-hire-us">Hire Us</a></p>
   </div>
 </div>
 <!-- End Top Bar -->
@@ -52,13 +52,13 @@
   <!-- This image is the background but sites like Facebook that pull images
   for previews don't check for CSS backgrounds. We put this one here and hide
   it so that the image will be pulled in when sharing links to this site -->
-  <img src="assets/img/fb-image.png" class="site-image-hide">
+  <img src="http://res.cloudinary.com/piggybank/image/upload/v1444888085/bridge_hkp6iq.jpg" class="site-image-hide">
   <div class="big-splash-inner-wrapper">
     <div class="vert-wrap">
       <img class="mark" src="assets/img/pigeon-white.svg" />
       <h1>We build great ideas.</h1>
       <h2>UI Design + Engineering + Consulting</h2>
-      <a onclick="goog_report_conversion ('http://www.yorkshireinteractive.com/splash-contact-form-launched')" class="btn-hire-us">Hire Us</a>
+      <a class="btn-hire-us">Hire Us</a>
     </div>
     <a id="Read-More" class="btn-more"><span>Read More</span></a>
   </div>
@@ -152,7 +152,7 @@
     <div>
       <h3>What do you need help building?</h3>
       <p>We have design and development resources available to start your project in October 2016.</p>
-      <a onclick="goog_report_conversion ('http://www.yorkshireinteractive.com/bottom-contact-form-launched')" class="btn-hire-us">Hire Us</a>
+      <a class="btn-hire-us">Hire Us</a>
     </div>
   </div>
 </div>
@@ -250,7 +250,7 @@
             </li>
             <li class="buttons ">
               <div>
-                <input onclick="goog_report_conversion ('http://www.yorkshireinteractive.com/contact-form-submission')" id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit">
+                <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit">
               </div>
             </li>
             <li class="hide">
@@ -287,39 +287,6 @@
 <script src="assets/js/libs/jquery.min.js"></script>
 <script src="assets/js/libs/jquery.fittext.js"></script>
 <script src="assets/js/main.js"></script>
-<!-- Google Code for Contact Form Submission Conversion Page
-In your html page, add the snippet and call
-goog_report_conversion when someone clicks on the
-chosen link or button. -->
-<script type="text/javascript">
-  /* <![CDATA[ */
-  goog_snippet_vars = function() {
-    var w = window;
-    w.google_conversion_id = 875349431;
-    w.google_conversion_label = "cSDqCIXrwmoQt4uzoQM";
-    w.google_remarketing_only = false;
-  }
-  // DO NOT CHANGE THE CODE BELOW.
-  goog_report_conversion = function(url) {
-    goog_snippet_vars();
-    window.google_conversion_format = "3";
-    var opt = new Object();
-    opt.onload_callback = function() {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  }
-  var conv_handler = window['google_trackConversion'];
-  if (typeof(conv_handler) == 'function') {
-    conv_handler(opt);
-  }
-}
-/* ]]> */
-</script>
-<script type="text/javascript"
-  src="//www.googleadservices.com/pagead/conversion_async.js">
-</script>
-
 <!-- End Scripts -->
 </body>
 </html>
