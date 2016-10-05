@@ -681,7 +681,7 @@ nav ul {
     position: relative;
 }
 
-.wufoo input[type=text], .wufoo input[type=email], .wufoo textarea {
+.wufoo input[type=text], .wufoo input[type=email], .wufoo textarea, .wufoo input[type=tel] {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
