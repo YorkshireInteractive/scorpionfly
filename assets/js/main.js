@@ -14,7 +14,7 @@ var thirdTransitionHeight;
  * Figures out where page needs to transition colors/styles of nav/top-bar elements
  */
 var getTransitionHeights = function () {
-  splashTransitionHeight = $('.big-splash').height();
+  splashTransitionHeight = $('.initial-scroll').height();
 };
 
 $window.resize(function () {
@@ -46,3 +46,7 @@ getTransitionHeights();
   $(".modal-dismiss-btn").click(function() {
     $('#contact-form-modal, #hire-us-wrapper').fadeToggle();
   });
+
+
+
+$( "iframe" ).wrap( "<div class='videowrapper'></div>" );

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fd76d9b7-9b73-4f4b-a7a3-e723aad99ae8" name="jasonrbennett.com" url="http://jasonrbennett.com/scorpionfly">
+        <fileTransfer host="jasonrbennett.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
