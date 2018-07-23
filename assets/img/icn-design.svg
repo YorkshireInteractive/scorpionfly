@@ -1,1 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.4 86.4"><defs><style>.cls-1{fill:#fff;}</style></defs><title>icn-design</title><circle class="cls-1" cx="43.2" cy="43.2" r="5.3"/><path class="cls-1" d="M45.2,33.7c24.1-31.3.4-31.9,0.4-31.9S21.8,1.9,45.2,33.7Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M37.1,36.8C32.1-2.3,14.9,14,14.9,14S-1.9,30.9,37.1,36.8Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M33.7,44.8C2.4,20.7,1.8,44.4,1.8,44.4S1.9,68.2,33.7,44.8Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M36.8,52.9C-2.3,57.9,14,75.1,14,75.1S30.9,91.9,36.8,52.9Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M44.8,56.3c-24.1,31.3-.4,31.9-0.4,31.9S68.2,88.1,44.8,56.3Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M52.9,53.2C57.9,92.3,75.1,76,75.1,76S91.9,59.1,52.9,53.2Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M56.3,45.2c31.3,24.1,31.9.4,31.9,0.4S88.1,21.8,56.3,45.2Z" transform="translate(-1.8 -1.8)"/><path class="cls-1" d="M53.2,37.1C92.3,32.1,76,14.9,76,14.9S59.1-1.9,53.2,37.1Z" transform="translate(-1.8 -1.8)"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="40px" viewBox="0 0 20 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-design</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icn-design" transform="translate(-15.000000, -4.000000)">
+            <rect id="Rectangle-Copy-6" x="0" y="0" width="50" height="50"></rect>
+            <path d="M17,30 L17,42 L33,42 L33,30 L17,30 Z M15,28 L35,28 L35,44 L15,44 L15,28 Z M25,22 C29.418278,22 33,18.418278 33,14 C33,9.581722 29.418278,6 25,6 C20.581722,6 17,9.581722 17,14 C17,18.418278 20.581722,22 25,22 Z M25,24 C19.4771525,24 15,19.5228475 15,14 C15,8.4771525 19.4771525,4 25,4 C30.5228475,4 35,8.4771525 35,14 C35,19.5228475 30.5228475,24 25,24 Z" id="Combined-Shape-Copy" fill="#94B5BA" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
